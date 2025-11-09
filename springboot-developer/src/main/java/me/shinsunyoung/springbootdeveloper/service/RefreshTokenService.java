@@ -14,6 +14,4 @@ public class RefreshTokenService {
         return refreshTokenRepository.findByRefreshToken(refreshToken)
                 .orElseThrow(()->new IllegalArgumentException("Unexpected token"));
     }
-
-
 }

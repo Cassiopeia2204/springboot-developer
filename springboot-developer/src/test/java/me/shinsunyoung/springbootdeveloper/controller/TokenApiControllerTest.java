@@ -88,5 +88,4 @@ class TokenApiControllerTest {
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.accessToken").isNotEmpty());
     }
-
 }
